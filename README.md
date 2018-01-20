@@ -5,11 +5,12 @@ Landing page design for Juwenalia Śląskie 2018
 Landing page for Juwenalia Śląskie 2018 - students music festiwal of Silesia, Poland
 
 ### responsive
-css grid with media queries
+responsive page layout with media queries
 responsive logo
+floating animated background
 
 ### animated
-animated background and logo effects using javascript, jquery and css animation
+animated background and logo effects using javascript and css animation
 
 ### simple one page promo
 
