@@ -36,20 +36,43 @@ body {
  "left middle right"
  "left center right"
  "footer footer footer"; 
- background: -moz-radial-gradient(center, ellipse cover, rgba(0,204,156,1) 0%, rgba(0,16,1,1) 67%, rgba(0,22,1,1) 80%, rgba(0,22,1,1) 100%);
- background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0,204,156,1)), color-stop(67%, rgba(0,16,1,1)), color-stop(80%, rgba(0,22,1,1)), color-stop(100%, rgba(0,22,1,1)));
- background: -webkit-radial-gradient(center, ellipse cover, rgba(0,204,156,1) 0%, rgba(0,16,1,1) 67%, rgba(0,22,1,1) 80%, rgba(0,22,1,1) 100%);
- background: -o-radial-gradient(center, ellipse cover, rgba(0,204,156,1) 0%, rgba(0,16,1,1) 67%, rgba(0,22,1,1) 80%, rgba(0,22,1,1) 100%);
- background: -ms-radial-gradient(center, ellipse cover, rgba(0,204,156,1) 0%, rgba(0,16,1,1) 67%, rgba(0,22,1,1) 80%, rgba(0,22,1,1) 100%);
- background: radial-gradient(ellipse at center, rgba(0,204,156,1) 0%, rgba(0,16,1,1) 67%, rgba(0,22,1,1) 80%, rgba(0,22,1,1) 100%);
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cc9c', endColorstr='#001601', GradientType=1 );
-}
+
+
+ background: rgba(70,181,148,1);
+ background: -moz-radial-gradient(center, ellipse cover, rgba(70,181,148,1) 0%, rgba(0,22,8,1) 51%, rgba(0,22,8,1) 100%);
+ background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(70,181,148,1)), color-stop(51%, rgba(0,22,8,1)), color-stop(100%, rgba(0,22,8,1)));
+ background: -webkit-radial-gradient(center, ellipse cover, rgba(70,181,148,1) 0%, rgba(0,22,8,1) 51%, rgba(0,22,8,1) 100%);
+ background: -o-radial-gradient(center, ellipse cover, rgba(70,181,148,1) 0%, rgba(0,22,8,1) 51%, rgba(0,22,8,1) 100%);
+ background: -ms-radial-gradient(center, ellipse cover, rgba(70,181,148,1) 0%, rgba(0,22,8,1) 51%, rgba(0,22,8,1) 100%);
+ background: radial-gradient(ellipse at center, rgba(70,181,148,1) 0%, rgba(0,22,8,1) 51%, rgba(0,22,8,1) 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b594', endColorstr='#001608', GradientType=1 );
+  }
+
+  .background{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    background-image: url("../img/backgroundBottom.svg");
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
 .logo{
   grid-area: center;
   margin: 40px;
 }
+#JVNBig{
+  position: relative;
+  z-index: 10;
+}
 #JVNSmall{
+  position: relative;
   display: none;
+  z-index: 10;
 }
 .lead{
   grid-area: center;
@@ -76,6 +99,7 @@ body {
   grid-area: middle;
   color: #FF0090;
   padding: 5vh 20vw;
+
 }
 .middle h1{
   letter-spacing: -2px;
@@ -85,8 +109,13 @@ body {
   font-weight: 900;
   font-size: 3rem;
 }
-
-
+#spodek{
+  position: absolute;
+  margin: 0 auto;
+  top: 40vh;
+  z-index: 1;
+  transition: all 1s ease;
+}
 
 
 @media (max-height: 400px) {
