@@ -45,7 +45,7 @@ body {
  background-size: 105%;
  background-repeat: no-repeat;
  transition: all .6s ease;
- /* animation: float 10s infinite; */
+ animation: float 10s infinite;
 }
 
 
