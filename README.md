@@ -13,5 +13,5 @@ animated background and logo effects using javascript, jquery and css animation
 
 ### simple one page promo
 
-###hidden game
+https://radekm86.github.io/JVN_landing_page/ 
 
