@@ -56,8 +56,8 @@ body {
     bottom: 0;
     background-image: url("../img/backgroundBottom.svg");
     background-position-x: center;
-    background-position-y: bottom;
-    background-size: contain;
+    background-position-y: top;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
@@ -74,15 +74,7 @@ body {
   display: none;
   z-index: 10;
 }
-.lead{
-  grid-area: center;
-  text-align: center;
-  bottom: 10vh;
-  letter-spacing: 10px;
-  font-weight: 300;
-  margin: 10px 0;
-  font-size: .7rem;
-}
+
 .left{
   height: 90vh;
   grid-area: left;
@@ -95,6 +87,7 @@ body {
 }
 
 .middle{
+  z-index: 4;
   height: 40vh;
   grid-area: middle;
   color: #FF0090;
@@ -161,4 +154,15 @@ footer {
   footer li {
     display: inline;
     padding: 0 4px;
+  }
+  .lead{
+    grid-area: center;
+    text-align: center;
+    bottom: 1vh;
+    letter-spacing: 10px;
+    font-weight: 300;
+    margin: 10px auto;
+    font-size: .7rem;
+    position: relative;
+    z-index: 15;
   }
