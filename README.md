@@ -11,4 +11,7 @@ responsive logo
 ### animated
 animated background and logo effects using javascript, jquery and css animation
 
-### simple one page preview
+### simple one page promo
+
+###hidden game
+
