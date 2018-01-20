@@ -45,7 +45,7 @@ body {
  background-size: 105%;
  background-repeat: no-repeat;
  transition: all .6s ease;
- animation: float 10s infinite;
+ animation: float 10s forwards;
 }
 
 
@@ -122,7 +122,7 @@ svg{
 .middle{
   color: #FF0090;
   text-align: center;
-  padding: 10vh 40vw;
+  padding: 5vh 40vw;
   transition: all .6s ease;
 }
 .middle h1{
@@ -136,7 +136,7 @@ svg{
 
 .lead{
   color:#00CC9C;
-  margin-top: 100px;
+  margin-top: 70px;
   width: 100vw;
   letter-spacing: 10px;
   font-weight: 300;
