@@ -47,13 +47,56 @@ body {
  background-size: 105%;
  background-repeat: no-repeat;
  transition: all .6s ease;
+ animation: float 5s forwards;
 }
 
 
 
 .logo{
   transition: all .6s ease;
+
 }
+svg{
+  border: 1px solid #FFF;
+  border-radius: 10px;
+}
+
+.echo path, .echo polygon{
+  fill: rgba(0, 195, 255, 0.486);
+
+  animation: wobble 5s infinite;
+  animation-delay: 2s;
+}
+
+.echo2 path, .echo2 polygon{
+  fill: rgba(247, 0, 255, 0.466);
+
+  animation: wobble 5s infinite;
+  animation-delay: 1.8s;
+}
+
+@keyframes float{
+  0%{background-position-y: top;}
+  50%{background-position-y: 10%}
+  100%{background-position-y: top;}
+}
+
+@keyframes wobble{
+  0% {transform: translateX(-6px) translateY(-6px)}
+  2% {transform: translateX(6px) translateY(6px) }
+  3% {transform: translateX(-6px) translateY(-6px) }
+  5% {transform: translateX(0px) translateY(0px) }
+  6% {transform: translateX(-6px) translateY(-6px) }
+  7% {transform: translateX(6px) translateY(6px) }
+  8% {transform: translateX(6px) translateY(-6px) }
+  9% {transform: translateX(0px) translateY(0px) }
+  10% {transform: translateX(-6px) translateY(-6px) }
+  12% {transform: translateX(6px) translateY(6px)}
+  13% {transform: translateX(-6px) translateY(-6px) }
+  15% {transform: translateX(0px) translateY(0px) }
+  100% {transform: translateX(0px) translateY(0px) }
+}
+
 #JVNBig{
   z-index: 15;
   transition: all .6s ease;
@@ -109,6 +152,7 @@ body {
   }
   .wrapper{
     background-position-y: 40%;
+    animation: none;
   }
   .middle h1{
     letter-spacing: -2px;
