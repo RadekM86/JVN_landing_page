@@ -13,7 +13,7 @@
   "dependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
     "body-parser": "^1.18.2",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "ngrok": "^2.2.24",
     "react-svg": "^2.2.5",
     "socket.io": "^2.4.0",
